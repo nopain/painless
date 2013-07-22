@@ -1,0 +1,38 @@
+BODY,HTML {
+background-color:#FFF;
+font-size:13px;
+font-family:Arial,sans-serif;
+}
+
+BODY {
+width:960px;
+margin:0 auto;
+}
+
+.block {
+display:block;
+}
+
+INPUT[type="text"] {
+padding:3px;
+border:2px inset #CCC;
+}
+
+INPUT[type="submit"] {
+padding:3px;
+padding-left:5px;
+padding-right:5px;
+border:2px outset #CCC;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+-o-border-radius:3px;
+border-radius:3px;
+}
+
+H1 {
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+
