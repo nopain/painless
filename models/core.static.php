@@ -10,6 +10,10 @@ class Core {
 
 public static function getView($sPage){
 	// translate page controller path with a view path
+	if (strpos($sPage,'?') !== FALSE) {
+		$asParts = explode('?',$sPage);
+		$sPage = @ $asParts[0];
+	}
 	$sView = str_replace('/controllers/','/views/',$sPage);
 	$sDir = rtrim(dirname($sView),'/');
 	$sFile = basename($sPage);
